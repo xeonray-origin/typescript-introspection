@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "lib": [
+        "DOM",
+        "ES5"
+    ],
+     "allowJs": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",  
+    "plugins": [
+      {
+          "transform": "tst-reflect-transformer"
+      }
+  ]
+  },
+  "ts-node": {
+    // This can be omitted when using ts-patch
+    "compiler": "ttypescript"
+},
+  "include": [ "introspection-with-reflect-metadata.ts"],
+  "exclude": [
+    "node_modules"
+  ]
+}
